@@ -2,10 +2,14 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('ruta/a/tu/imagen_de_fondo.jpg'); /* Cambia esto a la ruta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.8); /* Usar un color de fondo semitransparente para mejor visibilidad */
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -28,7 +32,7 @@ nav ul li a {
 
 main {
     padding: 20px;
-    background: linear-gradient(to right, #f0f0f0, #e0e0e0);
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para el contenido */
 }
 
 .card-container {
@@ -43,7 +47,7 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 15px;
-    flex: 1 1 calc(30% - 20px); 
+    flex: 1 1 calc(30% - 20px); /* 3 cards in a row */
     box-sizing: border-box;
 }
 
@@ -76,7 +80,7 @@ section {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.8); /* Usar un color de fondo semitransparente para mejor visibilidad */
     color: white;
     position: relative;
     bottom: 0;
@@ -115,7 +119,7 @@ form button:hover {
 /* Diseño responsivo */
 @media (max-width: 768px) {
     .card {
-        flex: 1 1 calc(45% - 20px);
+        flex: 1 1 calc(45% - 20px); /* 2 cards in a row */
     }
 
     nav ul li {
@@ -126,33 +130,10 @@ form button:hover {
 
 @media (max-width: 480px) {
     .card {
-        flex: 1 1 100%; 
+        flex: 1 1 100%; /* 1 card in a row */
     }
 
     form {
         align-items: stretch;
     }
-}
-
-.responsive-video {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-}
-
-.responsive-video video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.responsive-map iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
